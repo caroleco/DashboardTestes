@@ -60,16 +60,16 @@ class Dashboard extends Component {
       <div className="content">
         <Grid fluid>
           <Row>
-            <Col lg={3} sm={6}>
+            <Col lg={3} sm={4}>
               <StatsCard
                 bigIcon={<i className="pe-7s-server text-warning" />}
                 statsText="Specs"
                 statsValue={data.stats.suites}
                 statsIcon={<i className="fa fa-refresh" />}
-                statsIconText="Número Specs testados"
+                statsIconText="Número Specs"
               />
             </Col>
-            <Col lg={6} sm={6}>
+            <Col lg={6} sm={4}>
               <StatsCard
                 bigIcon={<i className="pe-7s-wallet text-success" />}
                 statsText="Data"
@@ -78,7 +78,7 @@ class Dashboard extends Component {
                 statsIconText="Último Teste"
               />
             </Col>
-            <Col lg={3} sm={6}>
+            <Col lg={3} sm={4}>
               <StatsCard
                 bigIcon={<i className="pe-7s-graph1 text-danger" />}
                 statsText="Erros"
@@ -91,7 +91,7 @@ class Dashboard extends Component {
           </Row>
           <Row>
             
-            <Col md={24}>
+            <Col md={12}>
               <Card
                 statsIcon="fa fa-clock-o"
                 title="Teste"
