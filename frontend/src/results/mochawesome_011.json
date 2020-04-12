@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-04-12T14:18:15.884Z",
+    "end": "2020-04-12T14:18:18.270Z",
+    "duration": 2386,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5afc7d97-c067-4603-83b1-ebfa6dc66416",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\assertions.spec.js",
+      "file": "cypress\\integration\\examples\\assertions.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0054623f-3019-4505-be22-3126ba462eac",
+          "title": "Assertions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "22b24901-c86d-4be9-91e6-b731171250cc",
+              "title": "Implicit Assertions",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": ".should() - make an assertion about the current subject",
+                  "fullTitle": "Assertions Implicit Assertions .should() - make an assertion about the current subject",
+                  "timedOut": null,
+                  "duration": 441,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// https://on.cypress.io/should\ncy.get('.assertion-table').find('tbody tr:last').should('have.class', 'success').find('td').first() // checking the text of the <td> element in various ways\n.should('have.text', 'Column content').should('contain', 'Column content').should('have.html', 'Column content') // chai-jquery uses \"is()\" to check if element matches selector\n.should('match', 'td') // to match text content against a regular expression\n// first need to invoke jQuery method text()\n// and then match using regular expression\n.invoke('text').should('match', /column content/i); // a better way to check element's text content against a regular expression\n// is to use \"cy.contains\"\n// https://on.cypress.io/contains\ncy.get('.assertion-table').find('tbody tr:last') // finds first <td> element with text content matching regular expression\n.contains('td', /column content/i).should('be.visible'); // for more information about asserting element's text\n// see https://on.cypress.io/using-cypress-faq#How-do-I-get-an-element’s-text-contents",
+                  "err": {},
+                  "uuid": "8307d268-b93e-4a6d-9391-53d64740d350",
+                  "parentUUID": "22b24901-c86d-4be9-91e6-b731171250cc",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": ".and() - chain multiple assertions together",
+                  "fullTitle": "Assertions Implicit Assertions .and() - chain multiple assertions together",
+                  "timedOut": null,
+                  "duration": 154,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// https://on.cypress.io/and\ncy.get('.assertions-link').should('have.class', 'active').and('have.attr', 'href').and('include', 'cypress.io');",
+                  "err": {},
+                  "uuid": "ab840e93-8515-486d-b828-2ca9c22e03f0",
+                  "parentUUID": "22b24901-c86d-4be9-91e6-b731171250cc",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "8307d268-b93e-4a6d-9391-53d64740d350",
+                "ab840e93-8515-486d-b828-2ca9c22e03f0"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 595,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.0.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "frontend/src/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.0.0"
+    }
+  }
+}

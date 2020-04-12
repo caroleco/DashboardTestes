@@ -19,7 +19,8 @@ import React, { Component } from "react";
 import {
   Grid,
   Row,
-  Col
+  Col,
+  Button
 } from "react-bootstrap";
 
 import { Card } from "components/Card/Card.jsx";
@@ -42,29 +43,28 @@ class TestDetails extends Component {
     return legend;
   }
   render() {
-    const tests = jp.query(data, '$.results[*].suites[*]')
+    const tests = jp.query(data, '$.results[*].suites[*].tests[*]')
+    var str = '';
     return (
       <Grid>
         <Row>
           {tests.map(result => (
+            str = `${result.err.message}`,
             result.fail ? (
+              
               <Col md={6}>
-                <Card
-                  id="chartActivity"
-                  title={result.title}
-                  category="All products including Taxes"
-                  stats="Data information certified"
-                  statsIcon="fa fa-check"
-                  content={
-                    <div className="ct-chart">
-                      {tests.title}
-                    </div>
-                  }
-                  legend={
-                    <div className="legend">{this.createLegend(legendBar)}</div>
-                  }
-                />
-              </Col>) : ""
+            <Card
+              id="chartActivity"
+              title={result.title}
+              stats="Teste Reprovado"
+              statsIcon="fa fa-times-circle"
+              content={
+                <div className="ct-chart">
+                  <p>{str.split("retrying:").pop()}</p>
+                </div>
+              }
+            />
+          </Col>) : ""
           ))}
 
           {
@@ -76,14 +76,14 @@ class TestDetails extends Component {
                   content={
                     <div className="ct-chart">
                       <h2>TODOS OS TESTE FORAM APROVADOS</h2>
-                    
+
                     </div>
-                  }                  
+                  }
                 />
-              </Col>):""
+              </Col>) : ""
           }
 
-          
+
         </Row>
       </Grid>
     );

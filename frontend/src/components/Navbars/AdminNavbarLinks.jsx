@@ -15,11 +15,28 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React, { Component } from "react";
-import { NavItem, Nav, NavDropdown, MenuItem } from "react-bootstrap";
+import React, { Component, useState } from "react";
+import { NavItem, Nav, NavDropdown, MenuItem, Button } from "react-bootstrap";
+import api from "services/api";
 
 class AdminNavbarLinks extends Component {
+ 
   render() {
+    
+
+    async function executeTest(e) {
+      e.preventDefault();
+      console.log('ok')
+      
+      try {
+
+        return await api.get('exec')
+
+      } catch (err) {
+        alert("Erro " + err);
+      }
+
+    }
     return (
       <div>
         <Nav>
@@ -27,9 +44,13 @@ class AdminNavbarLinks extends Component {
             <i className="fa fa-dashboard" />
             <p className="hidden-lg hidden-md">Dashboard</p>
           </NavItem>
-          
+
         </Nav>
         <Nav pullRight>
+          <NavItem eventKey={3} href="#">
+            <Button onClick={executeTest}>
+              Run</Button>
+          </NavItem>
         </Nav>
       </div>
     );

@@ -1,0 +1,9 @@
+{
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "./frontend/src/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+    }
+}
