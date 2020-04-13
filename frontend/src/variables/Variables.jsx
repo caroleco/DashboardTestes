@@ -472,9 +472,13 @@ const iconsArray = [
 // //
 //
 // Data for Pie Chart
+var passPercent = data.stats.passPercent;
+var failedPercent = 100 - data.stats.passPercent;
+var pass = passPercent.toFixed(2);
+var fail = failedPercent.toFixed(2);
 var dataPie = {
-  labels: [`${data.stats.passPercent}%`, `${100 - data.stats.passPercent}%`],
-  series: [data.stats.passPercent, 100 - data.stats.passPercent]
+  labels: [`${pass}%`, `${fail}%`],
+  series: [pass, fail]
 };
 var legendPie = {
   names: ["Aprovados", "Reprovados"],

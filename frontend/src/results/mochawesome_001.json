@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2020-04-13T13:35:09.935Z",
-    "end": "2020-04-13T13:35:13.953Z",
-    "duration": 4018,
+    "start": "2020-04-13T14:36:33.646Z",
+    "end": "2020-04-13T14:36:37.401Z",
+    "duration": 3755,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "5e54dee8-d329-4ee7-bb90-d50bb9db0900",
+      "uuid": "dc0ce5a6-dece-4d14-b43d-c96f85ee0a0f",
       "title": "",
-      "fullFile": "cypress\\integration\\examples\\assertions.spec.js",
-      "file": "cypress\\integration\\examples\\assertions.spec.js",
+      "fullFile": "cypress\\integration\\specs\\assertions.spec.js",
+      "file": "cypress\\integration\\specs\\assertions.spec.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "929e3f64-db59-408f-b423-29a7d08e8afc",
+          "uuid": "a0b346cf-c1fa-464b-9b1a-af8e0490bd55",
           "title": "Assertions",
           "fullFile": "",
           "file": "",
@@ -36,7 +36,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "1b677a7c-1c4a-4475-9502-bcc4f0ae68a1",
+              "uuid": "45aaa7c0-108e-4a0d-9b2d-1e15a8c13977",
               "title": "Implicit Assertions",
               "fullFile": "",
               "file": "",
@@ -47,7 +47,7 @@
                   "title": ".should() - make an assertion about the current subject",
                   "fullTitle": "Assertions Implicit Assertions .should() - make an assertion about the current subject",
                   "timedOut": null,
-                  "duration": 1306,
+                  "duration": 1122,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -56,8 +56,8 @@
                   "context": null,
                   "code": "// https://on.cypress.io/should\ncy.get('.assertion-table').find('tbody tr:last').should('have.class', 'success').find('td').first() // checking the text of the <td> element in various ways\n.should('have.text', 'Column content').should('contain', 'Column content').should('have.html', 'Column content') // chai-jquery uses \"is()\" to check if element matches selector\n.should('match', 'td') // to match text content against a regular expression\n// first need to invoke jQuery method text()\n// and then match using regular expression\n.invoke('text').should('match', /column content/i); // a better way to check element's text content against a regular expression\n// is to use \"cy.contains\"\n// https://on.cypress.io/contains\ncy.get('.assertion-table').find('tbody tr:last') // finds first <td> element with text content matching regular expression\n.contains('td', /column content/i).should('be.visible'); // for more information about asserting element's text\n// see https://on.cypress.io/using-cypress-faq#How-do-I-get-an-element’s-text-contents",
                   "err": {},
-                  "uuid": "040c0da6-8e7f-4cf4-9063-af0b29aeea25",
-                  "parentUUID": "1b677a7c-1c4a-4475-9502-bcc4f0ae68a1",
+                  "uuid": "a82c2398-f839-4e9a-85b1-a96f2b1df1d8",
+                  "parentUUID": "45aaa7c0-108e-4a0d-9b2d-1e15a8c13977",
                   "isHook": false,
                   "skipped": false
                 },
@@ -65,7 +65,7 @@
                   "title": ".and() - chain multiple assertions together",
                   "fullTitle": "Assertions Implicit Assertions .and() - chain multiple assertions together",
                   "timedOut": null,
-                  "duration": 325,
+                  "duration": 344,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -74,21 +74,21 @@
                   "context": null,
                   "code": "// https://on.cypress.io/and\ncy.get('.assertions-link').should('have.class', 'active').and('have.attr', 'href').and('include', 'cypress.io');",
                   "err": {},
-                  "uuid": "5fbac8a6-0f33-49c8-9f85-af5d866ba064",
-                  "parentUUID": "1b677a7c-1c4a-4475-9502-bcc4f0ae68a1",
+                  "uuid": "8e8850ca-d201-4123-808b-e6fb92bc8c06",
+                  "parentUUID": "45aaa7c0-108e-4a0d-9b2d-1e15a8c13977",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "040c0da6-8e7f-4cf4-9063-af0b29aeea25",
-                "5fbac8a6-0f33-49c8-9f85-af5d866ba064"
+                "a82c2398-f839-4e9a-85b1-a96f2b1df1d8",
+                "8e8850ca-d201-4123-808b-e6fb92bc8c06"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 1631,
+              "duration": 1466,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000

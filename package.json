@@ -2,6 +2,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "cypress": "^4.3.0",
+    "cypress-cucumber-preprocessor": "^2.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
@@ -9,11 +10,15 @@
     "delete:reports": "IF EXIST frontend\\src\\results\\*.json del frontend\\src\\results\\*.json",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "report": "cypress run --reporter mochawesome --reporter-options reportDir=frontend/src/results,overwrite=false,html=false,json=true"
+    "report": "cypress run --reporter mochawesome --reporter-options reportDir=frontend/src/results,overwrite=false,html=false,json=true",
+    "merge": "npx mochawesome-merge frontend/src/results/*.json>frontend/src/output.json"
   },
   "devDependencies": {
     "cypress-multi-reporters": "^1.2.4",
     "mocha": "^7.1.1",
     "mochawesome": "^6.0.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }

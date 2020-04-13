@@ -1,5 +1,6 @@
 {
     "reporter": "mochawesome",
+    "testFiles": "**/*.{feature,features,spec.js}",
     "reporterOptions": {
         "reportDir": "./frontend/src/results",
         "overwrite": false,

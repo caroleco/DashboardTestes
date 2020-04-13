@@ -90,7 +90,7 @@ class Dashboard extends Component {
 
           </Row>
           <Row>
-            
+
             <Col md={12}>
               <Card
                 statsIcon="fa fa-clock-o"
@@ -105,11 +105,14 @@ class Dashboard extends Component {
                     <ChartistGraph data={dataPie} type="Pie" />
                   </div>
                 }
+                legend={
+                  <div className="legend">{this.createLegend(legendPie)}</div>
+                }
               />
             </Col>
           </Row>
 
-         
+
         </Grid>
       </div>
     );
