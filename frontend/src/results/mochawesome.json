@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 3,
-    "start": "2020-04-13T14:35:52.504Z",
-    "end": "2020-04-13T14:36:12.853Z",
-    "duration": 20349,
+    "start": "2020-04-13T15:05:38.825Z",
+    "end": "2020-04-13T15:05:59.750Z",
+    "duration": 20925,
     "testsRegistered": 3,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "331c72c4-82ac-49c1-bd98-57d88a76e8b6",
+      "uuid": "92b2a672-6eb8-4612-8af8-4277a8e23f40",
       "title": "",
       "fullFile": "cypress\\integration\\specs\\actions.spec.js",
       "file": "cypress\\integration\\specs\\actions.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "62eae9d6-a884-4971-b541-bfe1a87cc29f",
+          "uuid": "1505f1cc-ae42-4d5c-9864-8b190e14f8cc",
           "title": "Actions",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": ".type() - type into a DOM element",
               "fullTitle": "Actions .type() - type into a DOM element",
               "timedOut": null,
-              "duration": 6232,
+              "duration": 6036,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "AssertionError: Timed out retrying: expected '<input#email1.form-control.action-email>' not to have value 'fake@email.com'\n    at applyChainer (https://example.cypress.io/__cypress/runner/cypress_runner.js:131707:32)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:131748:16\n    at arrayReduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:18403:21)\n    at Function.reduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:27401:14)\n    at applyChainers (https://example.cypress.io/__cypress/runner/cypress_runner.js:131738:18)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Function.Promise.attempt.Promise.try (https://example.cypress.io/__cypress/runner/cypress_runner.js:6333:29)\n    at Context.shouldFn (https://example.cypress.io/__cypress/runner/cypress_runner.js:131752:23)\n    at Context.should (https://example.cypress.io/__cypress/runner/cypress_runner.js:131767:23)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:127819:39\n    at assertions (https://example.cypress.io/__cypress/runner/cypress_runner.js:128079:14)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Object.gotValue (https://example.cypress.io/__cypress/runner/cypress_runner.js:8203:18)\n    at Object.gotAccum (https://example.cypress.io/__cypress/runner/cypress_runner.js:8190:25)\n    at Object.tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Promise._settlePromiseFromHandler (https://example.cypress.io/__cypress/runner/cypress_runner.js:6994:31)",
                 "diff": ""
               },
-              "uuid": "5d5cc7b4-abe7-4777-8121-efe50cc0f9ba",
-              "parentUUID": "62eae9d6-a884-4971-b541-bfe1a87cc29f",
+              "uuid": "e37d0347-6734-4fda-a498-88b3cf2f2e93",
+              "parentUUID": "1505f1cc-ae42-4d5c-9864-8b190e14f8cc",
               "isHook": false,
               "skipped": false
             },
@@ -60,7 +60,7 @@
               "title": ".focus() - focus on a DOM element",
               "fullTitle": "Actions .focus() - focus on a DOM element",
               "timedOut": null,
-              "duration": 5321,
+              "duration": 5304,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -73,8 +73,8 @@
                 "estack": "AssertionError: Timed out retrying: expected '<label>' not to have attribute 'style' with the value 'color: orange;', but the value was 'color: orange;'\n    at applyChainer (https://example.cypress.io/__cypress/runner/cypress_runner.js:131707:32)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:131748:16\n    at arrayReduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:18403:21)\n    at Function.reduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:27401:14)\n    at applyChainers (https://example.cypress.io/__cypress/runner/cypress_runner.js:131738:18)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Function.Promise.attempt.Promise.try (https://example.cypress.io/__cypress/runner/cypress_runner.js:6333:29)\n    at Context.shouldFn (https://example.cypress.io/__cypress/runner/cypress_runner.js:131752:23)\n    at Context.should (https://example.cypress.io/__cypress/runner/cypress_runner.js:131767:23)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:127819:39\n    at assertions (https://example.cypress.io/__cypress/runner/cypress_runner.js:128079:14)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Object.gotValue (https://example.cypress.io/__cypress/runner/cypress_runner.js:8203:18)\n    at Object.gotAccum (https://example.cypress.io/__cypress/runner/cypress_runner.js:8190:25)\n    at Object.tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Promise._settlePromiseFromHandler (https://example.cypress.io/__cypress/runner/cypress_runner.js:6994:31)",
                 "diff": ""
               },
-              "uuid": "670e7c5c-3e48-4854-80de-91e9e4bbe416",
-              "parentUUID": "62eae9d6-a884-4971-b541-bfe1a87cc29f",
+              "uuid": "1c8681e6-6ce3-45ab-9a87-8032a61154a8",
+              "parentUUID": "1505f1cc-ae42-4d5c-9864-8b190e14f8cc",
               "isHook": false,
               "skipped": false
             },
@@ -82,7 +82,7 @@
               "title": ".blur() - blur off a DOM element",
               "fullTitle": "Actions .blur() - blur off a DOM element",
               "timedOut": null,
-              "duration": 5664,
+              "duration": 6093,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -95,8 +95,8 @@
                 "estack": "AssertionError: Timed out retrying: expected '<label>' not to have attribute 'style' with the value 'color: red;', but the value was 'color: red;'\n    at applyChainer (https://example.cypress.io/__cypress/runner/cypress_runner.js:131707:32)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:131748:16\n    at arrayReduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:18403:21)\n    at Function.reduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:27401:14)\n    at applyChainers (https://example.cypress.io/__cypress/runner/cypress_runner.js:131738:18)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Function.Promise.attempt.Promise.try (https://example.cypress.io/__cypress/runner/cypress_runner.js:6333:29)\n    at Context.shouldFn (https://example.cypress.io/__cypress/runner/cypress_runner.js:131752:23)\n    at Context.should (https://example.cypress.io/__cypress/runner/cypress_runner.js:131767:23)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:127819:39\n    at assertions (https://example.cypress.io/__cypress/runner/cypress_runner.js:128079:14)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Object.gotValue (https://example.cypress.io/__cypress/runner/cypress_runner.js:8203:18)\n    at Object.gotAccum (https://example.cypress.io/__cypress/runner/cypress_runner.js:8190:25)\n    at Object.tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Promise._settlePromiseFromHandler (https://example.cypress.io/__cypress/runner/cypress_runner.js:6994:31)",
                 "diff": ""
               },
-              "uuid": "31d6abfd-9464-4252-b5cf-377d8e1a8d39",
-              "parentUUID": "62eae9d6-a884-4971-b541-bfe1a87cc29f",
+              "uuid": "1a980cb4-305e-4bbc-aaf1-35c3bf04c635",
+              "parentUUID": "1505f1cc-ae42-4d5c-9864-8b190e14f8cc",
               "isHook": false,
               "skipped": false
             }
@@ -104,13 +104,13 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "5d5cc7b4-abe7-4777-8121-efe50cc0f9ba",
-            "670e7c5c-3e48-4854-80de-91e9e4bbe416",
-            "31d6abfd-9464-4252-b5cf-377d8e1a8d39"
+            "e37d0347-6734-4fda-a498-88b3cf2f2e93",
+            "1c8681e6-6ce3-45ab-9a87-8032a61154a8",
+            "1a980cb4-305e-4bbc-aaf1-35c3bf04c635"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 17217,
+          "duration": 17433,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
