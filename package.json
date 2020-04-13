@@ -6,6 +6,7 @@
     "react-dom": "^16.13.1"
   },
   "scripts": {
+    "delete:reports": "IF EXIST frontend\\src\\results\\*.json del frontend\\src\\results\\*.json",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "report": "cypress run --reporter mochawesome --reporter-options reportDir=frontend/src/results,overwrite=false,html=false,json=true"

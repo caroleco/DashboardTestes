@@ -1,0 +1,204 @@
+
+> @ report F:\TrabalhoCarol\DashboardTest
+> cypress run --reporter mochawesome --reporter-options reportDir=frontend/src/results,overwrite=false,html=false,json=true
+
+
+Warning: We failed to remove old browser profiles from previous runs.
+
+This error will not alter the exit code.
+
+Error: Command 'WMIC path win32_process get Name,Processid,ParentProcessId,Commandline,ExecutablePath' terminated with code: 1
+    at ChildProcess.<anonymous> (C:\Users\carol\AppData\Local\Cypress\Cache\4.3.0\Cypress\resources\app\packages\server\node_modules\find-process\lib\find_process.js:129:25)
+    at ChildProcess.emit (events.js:210:5)
+    at maybeClose (internal/child_process.js:1021:16)
+    at Socket.<anonymous> (internal/child_process.js:430:11)
+    at Socket.emit (events.js:210:5)
+    at Pipe.<anonymous> (net.js:658:12)
+
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:    4.3.0                                                                              │
+  │ Browser:    Electron 80 (headless)                                                             │
+  │ Specs:      2 found (examples\actions.spec.js, examples\assertions.spec.js)                    │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  examples\actions.spec.js                                                        (1 of 2)
+
+
+  Actions
+    1) .type() - type into a DOM element
+    2) .focus() - focus on a DOM element
+    3) .blur() - blur off a DOM element
+
+
+  0 passing (20s)
+  3 failing
+
+  1) Actions
+       .type() - type into a DOM element:
+
+      Timed out retrying
+      + expected - actual
+
+
+      at applyChainer (https://example.cypress.io/__cypress/runner/cypress_runner.js:131707:32)
+      at https://example.cypress.io/__cypress/runner/cypress_runner.js:131748:16
+      at arrayReduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:18403:21)
+      at Function.reduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:27401:14)
+      at applyChainers (https://example.cypress.io/__cypress/runner/cypress_runner.js:131738:18)
+      at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)
+      at Function.Promise.attempt.Promise.try (https://example.cypress.io/__cypress/runner/cypress_runner.js:6333:29)
+      at Context.shouldFn (https://example.cypress.io/__cypress/runner/cypress_runner.js:131752:23)
+      at Context.should (https://example.cypress.io/__cypress/runner/cypress_runner.js:131767:23)
+      at https://example.cypress.io/__cypress/runner/cypress_runner.js:127819:39
+      at assertions (https://example.cypress.io/__cypress/runner/cypress_runner.js:128079:14)
+      at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)
+      at Object.gotValue (https://example.cypress.io/__cypress/runner/cypress_runner.js:8203:18)
+      at Object.gotAccum (https://example.cypress.io/__cypress/runner/cypress_runner.js:8190:25)
+      at Object.tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)
+      at Promise._settlePromiseFromHandler (https://example.cypress.io/__cypress/runner/cypress_runner.js:6994:31)
+
+  2) Actions
+       .focus() - focus on a DOM element:
+
+      Timed out retrying
+      + expected - actual
+
+
+      at applyChainer (https://example.cypress.io/__cypress/runner/cypress_runner.js:131707:32)
+      at https://example.cypress.io/__cypress/runner/cypress_runner.js:131748:16
+      at arrayReduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:18403:21)
+      at Function.reduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:27401:14)
+      at applyChainers (https://example.cypress.io/__cypress/runner/cypress_runner.js:131738:18)
+      at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)
+      at Function.Promise.attempt.Promise.try (https://example.cypress.io/__cypress/runner/cypress_runner.js:6333:29)
+      at Context.shouldFn (https://example.cypress.io/__cypress/runner/cypress_runner.js:131752:23)
+      at Context.should (https://example.cypress.io/__cypress/runner/cypress_runner.js:131767:23)
+      at https://example.cypress.io/__cypress/runner/cypress_runner.js:127819:39
+      at assertions (https://example.cypress.io/__cypress/runner/cypress_runner.js:128079:14)
+      at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)
+      at Object.gotValue (https://example.cypress.io/__cypress/runner/cypress_runner.js:8203:18)
+      at Object.gotAccum (https://example.cypress.io/__cypress/runner/cypress_runner.js:8190:25)
+      at Object.tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)
+      at Promise._settlePromiseFromHandler (https://example.cypress.io/__cypress/runner/cypress_runner.js:6994:31)
+
+  3) Actions
+       .blur() - blur off a DOM element:
+
+      Timed out retrying
+      + expected - actual
+
+
+      at applyChainer (https://example.cypress.io/__cypress/runner/cypress_runner.js:131707:32)
+      at https://example.cypress.io/__cypress/runner/cypress_runner.js:131748:16
+      at arrayReduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:18403:21)
+      at Function.reduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:27401:14)
+      at applyChainers (https://example.cypress.io/__cypress/runner/cypress_runner.js:131738:18)
+      at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)
+      at Function.Promise.attempt.Promise.try (https://example.cypress.io/__cypress/runner/cypress_runner.js:6333:29)
+      at Context.shouldFn (https://example.cypress.io/__cypress/runner/cypress_runner.js:131752:23)
+      at Context.should (https://example.cypress.io/__cypress/runner/cypress_runner.js:131767:23)
+      at https://example.cypress.io/__cypress/runner/cypress_runner.js:127819:39
+      at assertions (https://example.cypress.io/__cypress/runner/cypress_runner.js:128079:14)
+      at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)
+      at Object.gotValue (https://example.cypress.io/__cypress/runner/cypress_runner.js:8203:18)
+      at Object.gotAccum (https://example.cypress.io/__cypress/runner/cypress_runner.js:8190:25)
+      at Object.tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)
+      at Promise._settlePromiseFromHandler (https://example.cypress.io/__cypress/runner/cypress_runner.js:6994:31)
+
+
+
+[mochawesome] Report JSON saved to F:\TrabalhoCarol\DashboardTest\frontend\src\results\mochawesome.json
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        3                                                                                │
+  │ Passing:      0                                                                                │
+  │ Failing:      3                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  3                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     20 seconds                                                                       │
+  │ Spec Ran:     examples\actions.spec.js                                                         │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  F:\TrabalhoCarol\DashboardTest\cypress\screenshots\examples\actions.spec.js\Acti     (1280x720)
+     ons -- .type() - type into a DOM element (failed).png                                          
+  -  F:\TrabalhoCarol\DashboardTest\cypress\screenshots\examples\actions.spec.js\Acti     (1280x720)
+     ons -- .focus() - focus on a DOM element (failed).png                                          
+  -  F:\TrabalhoCarol\DashboardTest\cypress\screenshots\examples\actions.spec.js\Acti     (1280x720)
+     ons -- .blur() - blur off a DOM element (failed).png                                           
+
+
+  (Video)
+
+  -  Started processing:  Compressing to 32 CRF                                                     
+    Compression progress:  84%
+  -  Finished processing: F:\TrabalhoCarol\DashboardTest\cypress\videos\examples\acti   (11 seconds)
+                          ons.spec.js.mp4                                                           
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  examples\assertions.spec.js                                                     (2 of 2)
+
+
+  Assertions
+    Implicit Assertions
+      √ .should() - make an assertion about the current subject (1306ms)
+      √ .and() - chain multiple assertions together (325ms)
+
+
+  2 passing (4s)
+
+[mochawesome] Report JSON saved to F:\TrabalhoCarol\DashboardTest\frontend\src\results\mochawesome_001.json
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     4 seconds                                                                        │
+  │ Spec Ran:     examples\assertions.spec.js                                                      │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Video)
+
+  -  Started processing:  Compressing to 32 CRF                                                     
+  -  Finished processing: F:\TrabalhoCarol\DashboardTest\cypress\videos\examples\asse    (3 seconds)
+                          rtions.spec.js.mp4                                                        
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ×  examples\actions.spec.js                 00:20        3        -        3        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  examples\assertions.spec.js              00:04        2        2        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ×  1 of 2 failed (50%)                      00:24        5        2        3        -        -  
+
