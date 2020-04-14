@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 1,
-    "start": "2020-04-13T15:06:19.725Z",
-    "end": "2020-04-13T15:06:28.522Z",
-    "duration": 8797,
+    "start": "2020-04-14T11:43:55.362Z",
+    "end": "2020-04-14T11:44:02.444Z",
+    "duration": 7082,
     "testsRegistered": 2,
     "passPercent": 50,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "8b08404f-0b17-4cf2-b481-2178626f4b7a",
+      "uuid": "e659a42c-d867-448a-b0e2-8610c78504cf",
       "title": "",
       "fullFile": "cypress\\integration\\specs\\assertions.spec.js",
       "file": "cypress\\integration\\specs\\assertions.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "755e500b-a2c5-4977-aecb-975107f92d51",
+          "uuid": "9d4788de-c9f2-4262-80e0-72ed0651a384",
           "title": "Assertions",
           "fullFile": "",
           "file": "",
@@ -36,7 +36,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "3d27ebd0-d80f-4609-8dbb-d8e51d8d05a4",
+              "uuid": "6c8be839-9594-4505-9e58-9273df26abf6",
               "title": "Implicit Assertions",
               "fullFile": "",
               "file": "",
@@ -47,7 +47,7 @@
                   "title": ".should() - make an assertion about the current subject",
                   "fullTitle": "Assertions Implicit Assertions .should() - make an assertion about the current subject",
                   "timedOut": null,
-                  "duration": 5578,
+                  "duration": 4933,
                   "state": "failed",
                   "speed": null,
                   "pass": false,
@@ -60,8 +60,8 @@
                     "estack": "AssertionError: Timed out retrying: expected '<td>' not to be 'visible'\n    at applyChainer (https://example.cypress.io/__cypress/runner/cypress_runner.js:131705:30)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:131748:16\n    at arrayReduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:18403:21)\n    at Function.reduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:27401:14)\n    at applyChainers (https://example.cypress.io/__cypress/runner/cypress_runner.js:131738:18)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Function.Promise.attempt.Promise.try (https://example.cypress.io/__cypress/runner/cypress_runner.js:6333:29)\n    at Context.shouldFn (https://example.cypress.io/__cypress/runner/cypress_runner.js:131752:23)\n    at Context.should (https://example.cypress.io/__cypress/runner/cypress_runner.js:131767:23)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:127819:39\n    at assertions (https://example.cypress.io/__cypress/runner/cypress_runner.js:128079:14)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Object.gotValue (https://example.cypress.io/__cypress/runner/cypress_runner.js:8203:18)\n    at Object.gotAccum (https://example.cypress.io/__cypress/runner/cypress_runner.js:8190:25)\n    at Object.tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Promise._settlePromiseFromHandler (https://example.cypress.io/__cypress/runner/cypress_runner.js:6994:31)",
                     "diff": null
                   },
-                  "uuid": "5b97febc-123e-49ae-937b-9289ecba6d31",
-                  "parentUUID": "3d27ebd0-d80f-4609-8dbb-d8e51d8d05a4",
+                  "uuid": "ec41dc6a-5530-4f89-87db-f07f9d1d6ffd",
+                  "parentUUID": "6c8be839-9594-4505-9e58-9273df26abf6",
                   "isHook": false,
                   "skipped": false
                 },
@@ -69,7 +69,7 @@
                   "title": ".and() - chain multiple assertions together",
                   "fullTitle": "Assertions Implicit Assertions .and() - chain multiple assertions together",
                   "timedOut": null,
-                  "duration": 791,
+                  "duration": 204,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -78,22 +78,22 @@
                   "context": null,
                   "code": "// https://on.cypress.io/and\ncy.get('.assertions-link').should('have.class', 'active').and('have.attr', 'href').and('include', 'cypress.io');",
                   "err": {},
-                  "uuid": "b7dded2a-3d01-4d27-9f73-84158b357baa",
-                  "parentUUID": "3d27ebd0-d80f-4609-8dbb-d8e51d8d05a4",
+                  "uuid": "8fee8dd7-3265-47f1-b5aa-4e3a1b7c87a3",
+                  "parentUUID": "6c8be839-9594-4505-9e58-9273df26abf6",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "b7dded2a-3d01-4d27-9f73-84158b357baa"
+                "8fee8dd7-3265-47f1-b5aa-4e3a1b7c87a3"
               ],
               "failures": [
-                "5b97febc-123e-49ae-937b-9289ecba6d31"
+                "ec41dc6a-5530-4f89-87db-f07f9d1d6ffd"
               ],
               "pending": [],
               "skipped": [],
-              "duration": 6369,
+              "duration": 5137,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000

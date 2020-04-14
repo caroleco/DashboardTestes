@@ -1,20 +1,5 @@
-/*!
 
-=========================================================
-* Light Bootstrap Dashboard React - v1.3.0
-=========================================================
 
-* Product Page: https://www.creative-tim.com/product/light-bootstrap-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/light-bootstrap-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React, { Component } from "react";
 import moment from 'moment';
 import jp from 'jsonpath';
@@ -24,23 +9,11 @@ import data from '../output.json';
 
 import { Card } from "components/Card/Card.jsx";
 import { StatsCard } from "components/StatsCard/StatsCard.jsx";
-import { Tasks } from "components/Tasks/Tasks.jsx";
 import {
   dataPie,
-  legendPie,
-  dataSales,
-  optionsSales,
-  responsiveSales,
-  legendSales,
-  dataBar,
-  optionsBar,
-  responsiveBar,
-  legendBar
+  legendPie
 } from "variables/Variables.jsx";
-
-
-
-//var jp = require('jsonpath');
+import ButtonLoader from "components/ButtonLoader/ButtonLoader";
 
 class Dashboard extends Component {
 
@@ -72,7 +45,7 @@ class Dashboard extends Component {
             <Col lg={6} sm={4}>
               <StatsCard
                 bigIcon={<i className="pe-7s-wallet text-success" />}
-                statsText="Data"
+                statsText="Date"
                 statsValue={moment(`${data.stats.start}`).format('DD/MM/YYYY')}
                 statsIcon={<i className="fa fa-calendar-o" />}
                 statsIconText="Último Teste"
@@ -92,6 +65,7 @@ class Dashboard extends Component {
           <Row>
 
             <Col md={12}>
+              <ButtonLoader />
               <Card
                 statsIcon="fa fa-clock-o"
                 title="Teste"
