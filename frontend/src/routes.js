@@ -2,6 +2,8 @@
 
 import Dashboard from "views/Dashboard.jsx";
 import TestDetails from "views/TestDetails.jsx";
+import Upgrade from "views/Upgrade.jsx";
+import api from "services/api";
 
 const dashboardRoutes = [
   {
@@ -17,7 +19,7 @@ const dashboardRoutes = [
     icon: "pe-7s-note2",
     component: TestDetails,
     layout: "/admin"
-  }
+  },
 ];
 
 export default dashboardRoutes;

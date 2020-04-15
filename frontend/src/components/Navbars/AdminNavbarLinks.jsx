@@ -17,26 +17,10 @@
 */
 import React, { Component, useState } from "react";
 import { NavItem, Nav, NavDropdown, MenuItem, Button } from "react-bootstrap";
-import api from "services/api";
 
 class AdminNavbarLinks extends Component {
  
-  render() {
-    
-
-    async function executeTest(e) {
-      e.preventDefault();
-      console.log('ok')
-      
-      try {
-
-        return await api.get('exec')
-
-      } catch (err) {
-        alert("Erro " + err);
-      }
-
-    }
+  render() {  
     return (
       <div>
         <Nav>
@@ -48,8 +32,7 @@ class AdminNavbarLinks extends Component {
         </Nav>
         <Nav pullRight>
           <NavItem eventKey={3} href="#">
-            <Button onClick={executeTest}>
-              Run</Button>
+            
           </NavItem>
         </Nav>
       </div>

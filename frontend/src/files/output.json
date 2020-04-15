@@ -1,0 +1,368 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 7,
+    "passes": 4,
+    "pending": 0,
+    "failures": 3,
+    "start": "2020-04-15T22:41:02.009Z",
+    "end": "2020-04-15T22:41:02.009Z",
+    "duration": 16522,
+    "testsRegistered": 7,
+    "passPercent": 57.142857142857146,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6986f134-eb29-46f1-8527-2c494f1c85bd",
+      "title": "",
+      "fullFile": "cypress\\integration\\specs\\assertions.spec.js",
+      "file": "cypress\\integration\\specs\\assertions.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fe7aa767-1b41-4b01-9955-fe20a8c8986e",
+          "title": "Assertions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "bb7ce70a-3898-4901-9913-59f8559e6fba",
+              "title": "Implicit Assertions",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": ".should() - make an assertion about the current subject",
+                  "fullTitle": "Assertions Implicit Assertions .should() - make an assertion about the current subject",
+                  "timedOut": null,
+                  "duration": 4792,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "// https://on.cypress.io/should\ncy.get('.assertion-table').find('tbody tr:last').should('have.class', 'success').find('td').first() // checking the text of the <td> element in various ways\n.should('not.have.text', 'Column content').should('contain', 'Column content').should('have.html', 'Column content') // chai-jquery uses \"is()\" to check if element matches selector\n.should('match', 'td') // to match text content against a regular expression\n// first need to invoke jQuery method text()\n// and then match using regular expression\n.invoke('text').should('match', /column content/i); // a better way to check element's text content against a regular expression\n// is to use \"cy.contains\"\n// https://on.cypress.io/contains\ncy.get('.assertion-table').find('tbody tr:last') // finds first <td> element with text content matching regular expression\n.contains('td', /column content/i).should('not.be.visible'); // for more information about asserting element's text\n// see https://on.cypress.io/using-cypress-faq#How-do-I-get-an-element’s-text-contents",
+                  "err": {
+                    "message": "AssertionError: Timed out retrying: expected '<td>' not to have text 'Column content'",
+                    "estack": "AssertionError: Timed out retrying: expected '<td>' not to have text 'Column content'\n    at applyChainer (https://example.cypress.io/__cypress/runner/cypress_runner.js:131707:32)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:131748:16\n    at arrayReduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:18403:21)\n    at Function.reduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:27401:14)\n    at applyChainers (https://example.cypress.io/__cypress/runner/cypress_runner.js:131738:18)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Function.Promise.attempt.Promise.try (https://example.cypress.io/__cypress/runner/cypress_runner.js:6333:29)\n    at Context.shouldFn (https://example.cypress.io/__cypress/runner/cypress_runner.js:131752:23)\n    at Context.should (https://example.cypress.io/__cypress/runner/cypress_runner.js:131767:23)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:127819:39\n    at assertions (https://example.cypress.io/__cypress/runner/cypress_runner.js:128079:14)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Object.gotValue (https://example.cypress.io/__cypress/runner/cypress_runner.js:8203:18)\n    at Object.gotAccum (https://example.cypress.io/__cypress/runner/cypress_runner.js:8190:25)\n    at Object.tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Promise._settlePromiseFromHandler (https://example.cypress.io/__cypress/runner/cypress_runner.js:6994:31)",
+                    "diff": ""
+                  },
+                  "uuid": "dc32e618-0826-4e5d-8fc0-8c99062d4d32",
+                  "parentUUID": "bb7ce70a-3898-4901-9913-59f8559e6fba",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": ".and() - chain multiple assertions together",
+                  "fullTitle": "Assertions Implicit Assertions .and() - chain multiple assertions together",
+                  "timedOut": null,
+                  "duration": 4478,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "// https://on.cypress.io/and\ncy.get('.assertions-link').should('not.have.class', 'active').and('have.attr', 'href').and('include', 'cypress.io');",
+                  "err": {
+                    "message": "AssertionError: Timed out retrying: expected '<a.assertions-link.active>' not to have class 'active'",
+                    "estack": "AssertionError: Timed out retrying: expected '<a.assertions-link.active>' not to have class 'active'\n    at applyChainer (https://example.cypress.io/__cypress/runner/cypress_runner.js:131707:32)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:131748:16\n    at arrayReduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:18403:21)\n    at Function.reduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:27401:14)\n    at applyChainers (https://example.cypress.io/__cypress/runner/cypress_runner.js:131738:18)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Function.Promise.attempt.Promise.try (https://example.cypress.io/__cypress/runner/cypress_runner.js:6333:29)\n    at Context.shouldFn (https://example.cypress.io/__cypress/runner/cypress_runner.js:131752:23)\n    at Context.should (https://example.cypress.io/__cypress/runner/cypress_runner.js:131767:23)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:127819:39\n    at assertions (https://example.cypress.io/__cypress/runner/cypress_runner.js:128079:14)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Object.gotValue (https://example.cypress.io/__cypress/runner/cypress_runner.js:8203:18)\n    at Object.gotAccum (https://example.cypress.io/__cypress/runner/cypress_runner.js:8190:25)\n    at Object.tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Promise._settlePromiseFromHandler (https://example.cypress.io/__cypress/runner/cypress_runner.js:6994:31)",
+                    "diff": null
+                  },
+                  "uuid": "6638f9f9-5f94-4dbe-87b7-d989f597f979",
+                  "parentUUID": "bb7ce70a-3898-4901-9913-59f8559e6fba",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "dc32e618-0826-4e5d-8fc0-8c99062d4d32",
+                "6638f9f9-5f94-4dbe-87b7-d989f597f979"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 9270,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "1f20aaf8-ab5b-4089-8496-d3c27cc18bc6",
+      "title": "",
+      "fullFile": "cypress\\integration\\specs\\test.spec.js",
+      "file": "cypress\\integration\\specs\\test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bb9ac9be-93ec-4a45-a7ed-27514d2952a1",
+          "title": "Teste",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Assert if true is equal to true",
+              "fullTitle": "Teste Assert if true is equal to true",
+              "timedOut": null,
+              "duration": 50,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(true).to.be[\"true\"];",
+              "err": {},
+              "uuid": "d603724c-fba5-4193-b68c-cda3873a4f50",
+              "parentUUID": "bb9ac9be-93ec-4a45-a7ed-27514d2952a1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d603724c-fba5-4193-b68c-cda3873a4f50"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 50,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "5b51ece3-a5c9-4f65-8e4e-aff532bbbb4d",
+      "title": "",
+      "fullFile": "cypress\\integration\\Teste.feature",
+      "file": "cypress\\integration\\Teste.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "57d5eed5-7a69-4bbc-9b70-e563157c0388",
+          "title": "Visit Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Open Page",
+              "fullTitle": "Visit Page Open Page",
+              "timedOut": null,
+              "duration": 496,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "92cfc44b-c2e5-4b61-baa8-11577531b296",
+              "parentUUID": "57d5eed5-7a69-4bbc-9b70-e563157c0388",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "92cfc44b-c2e5-4b61-baa8-11577531b296"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 496,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "fd35ec07-c6f6-4eb6-b0b6-9e8cacbe1e35",
+      "title": "",
+      "fullFile": "cypress\\integration\\specs\\actions.spec.js",
+      "file": "cypress\\integration\\specs\\actions.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "26120b56-709d-4c97-ab85-732893c9cb05",
+          "title": "Actions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": ".type() - type into a DOM element",
+              "fullTitle": "Actions .type() - type into a DOM element",
+              "timedOut": null,
+              "duration": 5653,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// https://on.cypress.io/type\ncy.get('.action-email').type('fake@email.com').should('not.have.value', 'fake@email.com') // .type() with special character sequences\n.type('{leftarrow}{rightarrow}{uparrow}{downarrow}').type('{del}{selectall}{backspace}') // .type() with key modifiers\n.type('{alt}{option}') //these are equivalent\n.type('{ctrl}{control}') //these are equivalent\n.type('{meta}{command}{cmd}') //these are equivalent\n.type('{shift}') // Delay each keypress by 0.1 sec\n.type('slow.typing@email.com', {\n  delay: 100\n}).should('have.value', 'slow.typing@email.com');\ncy.get('.action-disabled') // Ignore error checking prior to type\n// like whether the input is visible or disabled\n.type('disabled error checking', {\n  force: true\n}).should('have.value', 'disabled error checking');",
+              "err": {
+                "message": "AssertionError: Timed out retrying: expected '<input#email1.form-control.action-email>' not to have value 'fake@email.com'",
+                "estack": "AssertionError: Timed out retrying: expected '<input#email1.form-control.action-email>' not to have value 'fake@email.com'\n    at applyChainer (https://example.cypress.io/__cypress/runner/cypress_runner.js:131707:32)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:131748:16\n    at arrayReduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:18403:21)\n    at Function.reduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:27401:14)\n    at applyChainers (https://example.cypress.io/__cypress/runner/cypress_runner.js:131738:18)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Function.Promise.attempt.Promise.try (https://example.cypress.io/__cypress/runner/cypress_runner.js:6333:29)\n    at Context.shouldFn (https://example.cypress.io/__cypress/runner/cypress_runner.js:131752:23)\n    at Context.should (https://example.cypress.io/__cypress/runner/cypress_runner.js:131767:23)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:127819:39\n    at assertions (https://example.cypress.io/__cypress/runner/cypress_runner.js:128079:14)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Object.gotValue (https://example.cypress.io/__cypress/runner/cypress_runner.js:8203:18)\n    at Object.gotAccum (https://example.cypress.io/__cypress/runner/cypress_runner.js:8190:25)\n    at Object.tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Promise._settlePromiseFromHandler (https://example.cypress.io/__cypress/runner/cypress_runner.js:6994:31)",
+                "diff": ""
+              },
+              "uuid": "8801f31a-b9a7-4fc9-a7d2-ed35491a8a09",
+              "parentUUID": "26120b56-709d-4c97-ab85-732893c9cb05",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": ".focus() - focus on a DOM element",
+              "fullTitle": "Actions .focus() - focus on a DOM element",
+              "timedOut": null,
+              "duration": 368,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// https://on.cypress.io/focus\ncy.get('.action-focus').focus().should('have.class', 'focus').prev().should('have.attr', 'style', 'color: orange;');",
+              "err": {},
+              "uuid": "d7631fe1-66d2-4f54-b4cd-7172e7ff1051",
+              "parentUUID": "26120b56-709d-4c97-ab85-732893c9cb05",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": ".blur() - blur off a DOM element",
+              "fullTitle": "Actions .blur() - blur off a DOM element",
+              "timedOut": null,
+              "duration": 685,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// https://on.cypress.io/blur\ncy.get('.action-blur').type('About to blur').blur().should('have.class', 'error').prev().should('have.attr', 'style', 'color: red;');",
+              "err": {},
+              "uuid": "3537449b-6758-4867-a280-16d8fc6974c0",
+              "parentUUID": "26120b56-709d-4c97-ab85-732893c9cb05",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d7631fe1-66d2-4f54-b4cd-7172e7ff1051",
+            "3537449b-6758-4867-a280-16d8fc6974c0"
+          ],
+          "failures": [
+            "8801f31a-b9a7-4fc9-a7d2-ed35491a8a09"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6706,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.0.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "frontend/src/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.0.0"
+    }
+  }
+}

@@ -1,4 +1,4 @@
-const data = require('../output.json');
+const data = require('../files/output.json');
 
 var defaultWidth =
   window.screen.width > 768

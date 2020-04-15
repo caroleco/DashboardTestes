@@ -16,16 +16,18 @@
 
 */
 import React, { Component } from "react";
-import { Navbar } from "react-bootstrap";
+import { Navbar, Button, Nav } from "react-bootstrap";
 
 import AdminNavbarLinks from "./AdminNavbarLinks.jsx";
+import api from "services/api.js";
 
 class Header extends Component {
   constructor(props) {
     super(props);
     this.mobileSidebarToggle = this.mobileSidebarToggle.bind(this);
     this.state = {
-      sidebarExists: false
+      sidebarExists: false,
+      loading: false
     };
   }
   mobileSidebarToggle(e) {
@@ -44,15 +46,41 @@ class Header extends Component {
     };
     document.body.appendChild(node);
   }
+
+  fetchData = () =>  {
+    this.setState({ loading: true });
+    try {     
+       api.get('/execute').then(() => {        
+          this.setState({ loading: false });
+      })
+    }catch(e){
+      console.log('Erro XXXXXXX' + e)
+    }
+  
+
+  };
+ 
   render() {
+    const { loading } = this.state;
+    
     return (
       <Navbar fluid>
         <Navbar.Header>
           <Navbar.Brand>
             <a href="#">{this.props.brandText}</a>
           </Navbar.Brand>
-          <Navbar.Toggle onClick={this.mobileSidebarToggle} />
+         
         </Navbar.Header>
+        <Nav>
+          <Button style={{fontSize:"10px",color:"#428bca"}} className="btn btn-primary" onClick={this.fetchData} disabled={loading}>
+          {loading && (
+            <i
+              className="fa fa-refresh fa-spin"
+              style={{ marginRight: "5px" }}
+            />
+          )}{loading && <span>Executando...</span>}
+          {!loading && <span>Executar Testes</span>}</Button>
+          </Nav>
         <Navbar.Collapse>
           <AdminNavbarLinks />
         </Navbar.Collapse>

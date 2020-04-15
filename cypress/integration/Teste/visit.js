@@ -6,5 +6,5 @@ Given('I Open Example page', () => {
 })
 
 Then('I see "Assertation" in the title', () => {
-    cy.get('h1').should('not.contain','Assertions')
+    cy.get('h1').should('contain','Assertions')
 })

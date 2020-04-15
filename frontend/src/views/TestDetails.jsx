@@ -25,7 +25,7 @@ import {
 
 import { Card } from "components/Card/Card.jsx";
 import jp from 'jsonpath';
-import data from '../output.json';
+import data from '../files/output.json';
 import { legendBar } from "variables/Variables.jsx";
 
 
@@ -51,30 +51,32 @@ class TestDetails extends Component {
           {tests.map(result => (
             str = `${result.err.message}`,
             result.fail ? (
-              
+
               <Col md={6}>
-            <Card
-              id="chartActivity"
-              title={result.title}
-              stats="Teste Reprovado"
-              statsIcon="fa fa-times-circle"
-              content={
-                <div className="ct-chart">
-                  <p>{str.split("retrying:").pop()}</p>
-                </div>
-              }
-            />
-          </Col>) : ""
+                <Card
+                  
+                  id="chartActivity"
+                  title={result.title}
+                  stats="Teste Reprovado"
+                  statsIcon="fa fa-times-circle"
+                  content={
+                    <div className="ct-chart failCard">
+                      <p>{str.split("retrying:").pop()}</p>
+                    </div>
+                  }
+                />
+              </Col>) : ""
           ))}
 
           {
             data.stats.failures == 0 ? (
               <Col md={24}>
                 <Card
+                  
                   id="chartActivity"
                   title=""
                   content={
-                    <div className="ct-chart">
+                    <div className="ct-chart failCard">
                       <h2>TODOS OS TESTE FORAM APROVADOS</h2>
 
                     </div>

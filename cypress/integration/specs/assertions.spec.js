@@ -14,7 +14,7 @@ context('Assertions', () => {
         .find('td')
         .first()
         // checking the text of the <td> element in various ways
-        .should('have.text', 'Column content')
+        .should('not.have.text', 'Column content')
         .should('contain', 'Column content')
         .should('have.html', 'Column content')
         // chai-jquery uses "is()" to check if element matches selector
@@ -41,7 +41,7 @@ context('Assertions', () => {
     it('.and() - chain multiple assertions together', () => {
       // https://on.cypress.io/and
       cy.get('.assertions-link')
-        .should('have.class', 'active')
+        .should('not.have.class', 'active')
         .and('have.attr', 'href')
         .and('include', 'cypress.io')
     })

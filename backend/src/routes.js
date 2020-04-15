@@ -3,13 +3,6 @@ const routes = express.Router();
 
 const executeController = require('./controllers/ExecuteController');
 
-routes.get('/execute', executeController.index);
-
-routes.get('/users', (request, response)=>{
-    return response.json({
-        evento: 'teste',
-        aluno:'ok'
-    });
-});
+routes.get('/execute', executeController.index)
 
 module.exports = routes;

@@ -23,7 +23,6 @@ import AdminNavbar from "components/Navbars/AdminNavbar";
 import Footer from "components/Footer/Footer";
 import Sidebar from "components/Sidebar/Sidebar";
 import FixedPlugin from "components/FixedPlugin/FixedPlugin.jsx";
-
 import { style } from "variables/Variables.jsx";
 
 import routes from "routes.js";
@@ -147,16 +146,16 @@ class Admin extends Component {
   }
   render() {
     return (
-      <div className="wrapper">
+      <div className="wrapper">        
         <NotificationSystem ref="notificationSystem" style={style} />
         <Sidebar {...this.props} routes={routes} image={this.state.image}
         color={this.state.color}
         hasImage={this.state.hasImage}/>
         <div id="main-panel" className="main-panel" ref="mainPanel">
-          {/* <AdminNavbar
+          <AdminNavbar
             {...this.props}
             brandText={this.getBrandText(this.props.location.pathname)}
-          /> */}
+          />
           <Switch>{this.getRoutes(routes)}</Switch>
           <Footer />
           <FixedPlugin

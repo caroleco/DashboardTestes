@@ -11,7 +11,7 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "report": "cypress run --reporter mochawesome --reporter-options reportDir=frontend/src/results,overwrite=false,html=false,json=true",
-    "merge": "npx mochawesome-merge frontend/src/results/*.json>frontend/src/output.json"
+    "merge": "npx mochawesome-merge frontend/src/results/*.json>frontend/src/files/output_temp.json"
   },
   "devDependencies": {
     "cypress-multi-reporters": "^1.2.4",
