@@ -33,7 +33,7 @@ context('Actions', () => {
       .should('have.value', 'disabled error checking')
   })
 
-  it('.focus() - focus on a DOM element', () => {
+  it.skip('.focus() - focus on a DOM element', () => {
     // https://on.cypress.io/focus
     cy.get('.action-focus').focus()
       .should('have.class', 'focus')

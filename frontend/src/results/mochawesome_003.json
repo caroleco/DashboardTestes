@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-04-15T22:58:28.492Z",
+    "end": "2020-04-15T22:58:31.353Z",
+    "duration": 2861,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "94298a16-c03d-4dd6-92d3-0a9f952c0c0f",
+      "title": "",
+      "fullFile": "cypress\\integration\\Teste.feature",
+      "file": "cypress\\integration\\Teste.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7598f297-ade7-4a5f-b3e6-b5ced9afd1dc",
+          "title": "Visit Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Open Page",
+              "fullTitle": "Visit Page Open Page",
+              "timedOut": null,
+              "duration": 463,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "18ec7825-bad0-4ad4-93f1-20caf7d4e781",
+              "parentUUID": "7598f297-ade7-4a5f-b3e6-b5ced9afd1dc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "18ec7825-bad0-4ad4-93f1-20caf7d4e781"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 463,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.0.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "frontend/src/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.0.0"
+    }
+  }
+}

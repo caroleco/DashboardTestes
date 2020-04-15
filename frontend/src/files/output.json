@@ -2,15 +2,15 @@
   "stats": {
     "suites": 4,
     "tests": 7,
-    "passes": 4,
-    "pending": 0,
+    "passes": 3,
+    "pending": 1,
     "failures": 3,
-    "start": "2020-04-15T22:41:02.009Z",
-    "end": "2020-04-15T22:41:02.009Z",
-    "duration": 16522,
+    "start": "2020-04-15T22:58:54.134Z",
+    "end": "2020-04-15T22:58:54.134Z",
+    "duration": 16331,
     "testsRegistered": 7,
-    "passPercent": 57.142857142857146,
-    "pendingPercent": 0,
+    "passPercent": 42.857142857142854,
+    "pendingPercent": 14.285714285714286,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "6986f134-eb29-46f1-8527-2c494f1c85bd",
+      "uuid": "8410b5cc-740f-4b8e-81cb-d5bb6dc9a7c9",
       "title": "",
       "fullFile": "cypress\\integration\\specs\\assertions.spec.js",
       "file": "cypress\\integration\\specs\\assertions.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "fe7aa767-1b41-4b01-9955-fe20a8c8986e",
+          "uuid": "dfe7b07f-a282-406e-93a5-4149a30b6b77",
           "title": "Assertions",
           "fullFile": "",
           "file": "",
@@ -36,7 +36,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "bb7ce70a-3898-4901-9913-59f8559e6fba",
+              "uuid": "6b5ef8c8-270b-4a01-b0ec-7459fb41128a",
               "title": "Implicit Assertions",
               "fullFile": "",
               "file": "",
@@ -47,7 +47,7 @@
                   "title": ".should() - make an assertion about the current subject",
                   "fullTitle": "Assertions Implicit Assertions .should() - make an assertion about the current subject",
                   "timedOut": null,
-                  "duration": 4792,
+                  "duration": 4838,
                   "state": "failed",
                   "speed": null,
                   "pass": false,
@@ -60,8 +60,8 @@
                     "estack": "AssertionError: Timed out retrying: expected '<td>' not to have text 'Column content'\n    at applyChainer (https://example.cypress.io/__cypress/runner/cypress_runner.js:131707:32)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:131748:16\n    at arrayReduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:18403:21)\n    at Function.reduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:27401:14)\n    at applyChainers (https://example.cypress.io/__cypress/runner/cypress_runner.js:131738:18)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Function.Promise.attempt.Promise.try (https://example.cypress.io/__cypress/runner/cypress_runner.js:6333:29)\n    at Context.shouldFn (https://example.cypress.io/__cypress/runner/cypress_runner.js:131752:23)\n    at Context.should (https://example.cypress.io/__cypress/runner/cypress_runner.js:131767:23)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:127819:39\n    at assertions (https://example.cypress.io/__cypress/runner/cypress_runner.js:128079:14)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Object.gotValue (https://example.cypress.io/__cypress/runner/cypress_runner.js:8203:18)\n    at Object.gotAccum (https://example.cypress.io/__cypress/runner/cypress_runner.js:8190:25)\n    at Object.tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Promise._settlePromiseFromHandler (https://example.cypress.io/__cypress/runner/cypress_runner.js:6994:31)",
                     "diff": ""
                   },
-                  "uuid": "dc32e618-0826-4e5d-8fc0-8c99062d4d32",
-                  "parentUUID": "bb7ce70a-3898-4901-9913-59f8559e6fba",
+                  "uuid": "bdfe05c3-3f64-4bff-a298-f0092cb196d1",
+                  "parentUUID": "6b5ef8c8-270b-4a01-b0ec-7459fb41128a",
                   "isHook": false,
                   "skipped": false
                 },
@@ -69,7 +69,7 @@
                   "title": ".and() - chain multiple assertions together",
                   "fullTitle": "Assertions Implicit Assertions .and() - chain multiple assertions together",
                   "timedOut": null,
-                  "duration": 4478,
+                  "duration": 4555,
                   "state": "failed",
                   "speed": null,
                   "pass": false,
@@ -82,8 +82,8 @@
                     "estack": "AssertionError: Timed out retrying: expected '<a.assertions-link.active>' not to have class 'active'\n    at applyChainer (https://example.cypress.io/__cypress/runner/cypress_runner.js:131707:32)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:131748:16\n    at arrayReduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:18403:21)\n    at Function.reduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:27401:14)\n    at applyChainers (https://example.cypress.io/__cypress/runner/cypress_runner.js:131738:18)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Function.Promise.attempt.Promise.try (https://example.cypress.io/__cypress/runner/cypress_runner.js:6333:29)\n    at Context.shouldFn (https://example.cypress.io/__cypress/runner/cypress_runner.js:131752:23)\n    at Context.should (https://example.cypress.io/__cypress/runner/cypress_runner.js:131767:23)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:127819:39\n    at assertions (https://example.cypress.io/__cypress/runner/cypress_runner.js:128079:14)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Object.gotValue (https://example.cypress.io/__cypress/runner/cypress_runner.js:8203:18)\n    at Object.gotAccum (https://example.cypress.io/__cypress/runner/cypress_runner.js:8190:25)\n    at Object.tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Promise._settlePromiseFromHandler (https://example.cypress.io/__cypress/runner/cypress_runner.js:6994:31)",
                     "diff": null
                   },
-                  "uuid": "6638f9f9-5f94-4dbe-87b7-d989f597f979",
-                  "parentUUID": "bb7ce70a-3898-4901-9913-59f8559e6fba",
+                  "uuid": "3c54c02f-0424-4f44-98e6-ccdbed3e60c7",
+                  "parentUUID": "6b5ef8c8-270b-4a01-b0ec-7459fb41128a",
                   "isHook": false,
                   "skipped": false
                 }
@@ -91,12 +91,12 @@
               "suites": [],
               "passes": [],
               "failures": [
-                "dc32e618-0826-4e5d-8fc0-8c99062d4d32",
-                "6638f9f9-5f94-4dbe-87b7-d989f597f979"
+                "bdfe05c3-3f64-4bff-a298-f0092cb196d1",
+                "3c54c02f-0424-4f44-98e6-ccdbed3e60c7"
               ],
               "pending": [],
               "skipped": [],
-              "duration": 9270,
+              "duration": 9393,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
@@ -122,7 +122,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "1f20aaf8-ab5b-4089-8496-d3c27cc18bc6",
+      "uuid": "1dec4b28-b02c-40c5-bc22-f4603e260979",
       "title": "",
       "fullFile": "cypress\\integration\\specs\\test.spec.js",
       "file": "cypress\\integration\\specs\\test.spec.js",
@@ -131,7 +131,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "bb9ac9be-93ec-4a45-a7ed-27514d2952a1",
+          "uuid": "1ae4a3df-9318-429c-af4e-94dae32ef306",
           "title": "Teste",
           "fullFile": "",
           "file": "",
@@ -142,7 +142,7 @@
               "title": "Assert if true is equal to true",
               "fullTitle": "Teste Assert if true is equal to true",
               "timedOut": null,
-              "duration": 50,
+              "duration": 51,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -151,20 +151,20 @@
               "context": null,
               "code": "expect(true).to.be[\"true\"];",
               "err": {},
-              "uuid": "d603724c-fba5-4193-b68c-cda3873a4f50",
-              "parentUUID": "bb9ac9be-93ec-4a45-a7ed-27514d2952a1",
+              "uuid": "4f7fd267-16c8-4739-84c4-1a3aeb05314c",
+              "parentUUID": "1ae4a3df-9318-429c-af4e-94dae32ef306",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d603724c-fba5-4193-b68c-cda3873a4f50"
+            "4f7fd267-16c8-4739-84c4-1a3aeb05314c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 50,
+          "duration": 51,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -180,7 +180,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "5b51ece3-a5c9-4f65-8e4e-aff532bbbb4d",
+      "uuid": "94298a16-c03d-4dd6-92d3-0a9f952c0c0f",
       "title": "",
       "fullFile": "cypress\\integration\\Teste.feature",
       "file": "cypress\\integration\\Teste.feature",
@@ -189,7 +189,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "57d5eed5-7a69-4bbc-9b70-e563157c0388",
+          "uuid": "7598f297-ade7-4a5f-b3e6-b5ced9afd1dc",
           "title": "Visit Page",
           "fullFile": "",
           "file": "",
@@ -200,7 +200,7 @@
               "title": "Open Page",
               "fullTitle": "Visit Page Open Page",
               "timedOut": null,
-              "duration": 496,
+              "duration": 463,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -209,20 +209,20 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "92cfc44b-c2e5-4b61-baa8-11577531b296",
-              "parentUUID": "57d5eed5-7a69-4bbc-9b70-e563157c0388",
+              "uuid": "18ec7825-bad0-4ad4-93f1-20caf7d4e781",
+              "parentUUID": "7598f297-ade7-4a5f-b3e6-b5ced9afd1dc",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "92cfc44b-c2e5-4b61-baa8-11577531b296"
+            "18ec7825-bad0-4ad4-93f1-20caf7d4e781"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 496,
+          "duration": 463,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -238,7 +238,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "fd35ec07-c6f6-4eb6-b0b6-9e8cacbe1e35",
+      "uuid": "b028c5cb-dacb-497e-a0e7-75b51453a9b5",
       "title": "",
       "fullFile": "cypress\\integration\\specs\\actions.spec.js",
       "file": "cypress\\integration\\specs\\actions.spec.js",
@@ -247,7 +247,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "26120b56-709d-4c97-ab85-732893c9cb05",
+          "uuid": "2461c50d-9ac5-4c50-ab28-66caff2959ee",
           "title": "Actions",
           "fullFile": "",
           "file": "",
@@ -258,7 +258,7 @@
               "title": ".type() - type into a DOM element",
               "fullTitle": "Actions .type() - type into a DOM element",
               "timedOut": null,
-              "duration": 5653,
+              "duration": 5607,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -271,8 +271,8 @@
                 "estack": "AssertionError: Timed out retrying: expected '<input#email1.form-control.action-email>' not to have value 'fake@email.com'\n    at applyChainer (https://example.cypress.io/__cypress/runner/cypress_runner.js:131707:32)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:131748:16\n    at arrayReduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:18403:21)\n    at Function.reduce (https://example.cypress.io/__cypress/runner/cypress_runner.js:27401:14)\n    at applyChainers (https://example.cypress.io/__cypress/runner/cypress_runner.js:131738:18)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Function.Promise.attempt.Promise.try (https://example.cypress.io/__cypress/runner/cypress_runner.js:6333:29)\n    at Context.shouldFn (https://example.cypress.io/__cypress/runner/cypress_runner.js:131752:23)\n    at Context.should (https://example.cypress.io/__cypress/runner/cypress_runner.js:131767:23)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:127819:39\n    at assertions (https://example.cypress.io/__cypress/runner/cypress_runner.js:128079:14)\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Object.gotValue (https://example.cypress.io/__cypress/runner/cypress_runner.js:8203:18)\n    at Object.gotAccum (https://example.cypress.io/__cypress/runner/cypress_runner.js:8190:25)\n    at Object.tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:9059:23)\n    at Promise._settlePromiseFromHandler (https://example.cypress.io/__cypress/runner/cypress_runner.js:6994:31)",
                 "diff": ""
               },
-              "uuid": "8801f31a-b9a7-4fc9-a7d2-ed35491a8a09",
-              "parentUUID": "26120b56-709d-4c97-ab85-732893c9cb05",
+              "uuid": "09e49fab-bc6d-4bf4-b87d-4fe4162e3fc9",
+              "parentUUID": "2461c50d-9ac5-4c50-ab28-66caff2959ee",
               "isHook": false,
               "skipped": false
             },
@@ -280,17 +280,17 @@
               "title": ".focus() - focus on a DOM element",
               "fullTitle": "Actions .focus() - focus on a DOM element",
               "timedOut": null,
-              "duration": 368,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
               "fail": false,
-              "pending": false,
+              "pending": true,
               "context": null,
-              "code": "// https://on.cypress.io/focus\ncy.get('.action-focus').focus().should('have.class', 'focus').prev().should('have.attr', 'style', 'color: orange;');",
+              "code": "",
               "err": {},
-              "uuid": "d7631fe1-66d2-4f54-b4cd-7172e7ff1051",
-              "parentUUID": "26120b56-709d-4c97-ab85-732893c9cb05",
+              "uuid": "b12c6fa4-31ed-4d5d-9470-03e47824105d",
+              "parentUUID": "2461c50d-9ac5-4c50-ab28-66caff2959ee",
               "isHook": false,
               "skipped": false
             },
@@ -298,7 +298,7 @@
               "title": ".blur() - blur off a DOM element",
               "fullTitle": "Actions .blur() - blur off a DOM element",
               "timedOut": null,
-              "duration": 685,
+              "duration": 817,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -307,23 +307,24 @@
               "context": null,
               "code": "// https://on.cypress.io/blur\ncy.get('.action-blur').type('About to blur').blur().should('have.class', 'error').prev().should('have.attr', 'style', 'color: red;');",
               "err": {},
-              "uuid": "3537449b-6758-4867-a280-16d8fc6974c0",
-              "parentUUID": "26120b56-709d-4c97-ab85-732893c9cb05",
+              "uuid": "250770b2-4003-42b7-9fcc-c2803b867298",
+              "parentUUID": "2461c50d-9ac5-4c50-ab28-66caff2959ee",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d7631fe1-66d2-4f54-b4cd-7172e7ff1051",
-            "3537449b-6758-4867-a280-16d8fc6974c0"
+            "250770b2-4003-42b7-9fcc-c2803b867298"
           ],
           "failures": [
-            "8801f31a-b9a7-4fc9-a7d2-ed35491a8a09"
+            "09e49fab-bc6d-4bf4-b87d-4fe4162e3fc9"
           ],
-          "pending": [],
+          "pending": [
+            "b12c6fa4-31ed-4d5d-9470-03e47824105d"
+          ],
           "skipped": [],
-          "duration": 6706,
+          "duration": 6424,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

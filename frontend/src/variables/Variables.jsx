@@ -472,18 +472,33 @@ const iconsArray = [
 // //
 //
 // Data for Pie Chart
+if(!!data){
 var passPercent = data.stats.passPercent;
 var failedPercent = 100 - data.stats.passPercent;
+var pendingPercent = data.stats.pendingPercent;
 var pass = passPercent.toFixed(2);
 var fail = failedPercent.toFixed(2);
-var dataPie = {
-  labels: [`${pass}%`, `${fail}%`],
-  series: [pass, fail]
-};
-var legendPie = {
-  names: ["Aprovados", "Reprovados"],
-  types: ["info", "danger"]
-};
+var pending = pendingPercent.toFixed(2);
+if(pending!=0){
+  var dataPie = {
+    labels: [`${pass}%`, `${fail}%`, `${pending}%`],
+    series: [pass, fail, pending]
+  };
+  var legendPie = {
+    names: ["Aprovados", "Reprovados", "Pendentes"],
+    types: ["info", "danger","warning"]
+  };
+}else{
+  var dataPie = {
+    labels: [`${pass}%`, `${fail}%`],
+    series: [pass, fail]
+  };
+  var legendPie = {
+    names: ["Aprovados", "Reprovados", "Pendentes"],
+    types: ["info", "danger","warning"]
+  };
+}}else{}
+
 
 // Data for Line Chart
 var dataSales = {

@@ -26,10 +26,7 @@ import {
 import { Card } from "components/Card/Card.jsx";
 import jp from 'jsonpath';
 import data from '../files/output.json';
-import { legendBar } from "variables/Variables.jsx";
 
-
-import avatar from "assets/img/faces/face-3.jpg";
 
 class TestDetails extends Component {
   createLegend(json) {
@@ -46,6 +43,8 @@ class TestDetails extends Component {
     const tests = jp.query(data, '$.results[*].suites[*].tests[*]')
     var str = '';
     return (
+      <div>
+      {!!(data)?
       <Grid>
         <Row>
           {tests.map(result => (
@@ -87,7 +86,7 @@ class TestDetails extends Component {
 
 
         </Row>
-      </Grid>
+      </Grid>:"ttk"}</div>
     );
   }
 }

@@ -13,9 +13,6 @@ import {
   legendPie
 } from "variables/Variables.jsx";
 import Load from "./Load";
-import api from "services/api";
-import { Cmd } from "services/cmd";
-
 
 class Dashboard extends Component {
 
@@ -37,7 +34,9 @@ class Dashboard extends Component {
   render() {
     const { loading } = this.state;
     return (
+     
       <div className="content">
+         {!!(data)?
         <Grid fluid>
           {loading == false ? (
             <Row>
@@ -98,7 +97,7 @@ class Dashboard extends Component {
           </Row>
 
 
-        </Grid>
+        </Grid>:"OKOK"}
       </div>
     );
   }
