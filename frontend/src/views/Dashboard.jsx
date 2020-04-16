@@ -15,6 +15,8 @@ import {
 import Load from "./Load";
 
 class Dashboard extends Component {
+  
+  
 
   createLegend(json) {
     var legend = [];
@@ -33,10 +35,11 @@ class Dashboard extends Component {
   
   render() {
     const { loading } = this.state;
+    {!!(this.data) ? this.data = {"teste":"t"}:console.log('ok')};
     return (
      
       <div className="content">
-         {!!(data)?
+         
         <Grid fluid>
           {loading == false ? (
             <Row>
@@ -97,7 +100,7 @@ class Dashboard extends Component {
           </Row>
 
 
-        </Grid>:"OKOK"}
+        </Grid>
       </div>
     );
   }

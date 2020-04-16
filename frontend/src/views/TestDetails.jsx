@@ -44,7 +44,7 @@ class TestDetails extends Component {
     var str = '';
     return (
       <div>
-      {!!(data)?
+     
       <Grid>
         <Row>
           {tests.map(result => (
@@ -86,7 +86,7 @@ class TestDetails extends Component {
 
 
         </Row>
-      </Grid>:"ttk"}</div>
+      </Grid></div>
     );
   }
 }
