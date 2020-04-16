@@ -15,7 +15,7 @@ const dashboardRoutes = [
   },
   {
     path: "/details",
-    name: "Detalhes de Teste",
+    name: "Testes Reprovados",
     icon: "pe-7s-note2",
     component: TestDetails,
     layout: "/admin"

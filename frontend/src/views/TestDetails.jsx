@@ -40,20 +40,18 @@ class TestDetails extends Component {
     return legend;
   }
   render() {
-    const tests = jp.query(data, '$.results[*].suites[*].tests[*]')
+    const suites = jp.query(data, '$..tests[*]');
     var str = '';
     return (
       <div>
      
       <Grid>
         <Row>
-          {tests.map(result => (
+          {suites.map(result => (
             str = `${result.err.message}`,
             result.fail ? (
-
               <Col md={6}>
-                <Card
-                  
+                <Card                  
                   id="chartActivity"
                   title={result.title}
                   stats="Teste Reprovado"
@@ -64,7 +62,7 @@ class TestDetails extends Component {
                     </div>
                   }
                 />
-              </Col>) : ""
+              </Col>):"" 
           ))}
 
           {
