@@ -35,13 +35,13 @@ class Dashboard extends Component {
   
   render() {
     const { loading } = this.state;
-    {!!(this.data) ? this.data = {"teste":"t"}:console.log('ok')};
+    //{!!(this.data) ? this.data = {"teste":"t"}:console.log('ok')};
     return (
      
       <div className="content">
          
         <Grid fluid>
-          {loading == false ? (
+          {loading === false ? (
             <Row>
 
               <Col lg={3} sm={4}>
@@ -77,7 +77,7 @@ class Dashboard extends Component {
           <Row>
 
             <Col md={12}>
-              {loading == false ? (
+              {loading === false ? (
                 < Card
                   statsIcon="fa fa-clock-o"
                   title="Teste"

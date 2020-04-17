@@ -479,7 +479,7 @@ var pendingPercent = data.stats.pendingPercent;
 var pass = passPercent.toFixed(2);
 var fail = failedPercent.toFixed(2);
 var pending = pendingPercent.toFixed(2);
-if(pending!=0){
+if(pending!==0){
   var dataPie = {
     labels: [`${pass}%`, `${fail}%`, `${pending}%`],
     series: [pass, fail, pending]

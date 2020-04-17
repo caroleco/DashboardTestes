@@ -2,8 +2,6 @@
 
 import Dashboard from "views/Dashboard.jsx";
 import TestDetails from "views/TestDetails.jsx";
-import Upgrade from "views/Upgrade.jsx";
-import api from "services/api";
 
 const dashboardRoutes = [
   {
