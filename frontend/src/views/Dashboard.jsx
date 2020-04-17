@@ -56,7 +56,7 @@ class Dashboard extends Component {
               <Col lg={6} sm={4}>
                 <StatsCard
                   bigIcon={<i className="pe-7s-wallet text-success" />}
-                  statsText="Date"
+                  statsText="Data"
                   statsValue={moment(`${data.stats.start}`).format('DD/MM/YYYY')}
                   statsIcon={<i className="fa fa-calendar-o" />}
                   statsIconText="Último Teste"
